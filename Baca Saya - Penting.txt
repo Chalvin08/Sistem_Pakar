@@ -1,0 +1,6 @@
+Langkah instal aplikasi sistem pakar diagnosa penyakit anak di localhost
+1. Unduh dan instal xampp v3.2.1 (php 5.6)
+2. Unduh source code aplikasi sipadapa.com pada link yang tersedia
+3. ekstak file zip dari aplikasi dan pindahkan ke data c/xampp/htdocs/paste di dalam
+4. buat nama database spd_penyakitanak di phpmyadmin browser(chrome) dan impor database spd_penyakitanak.sql 
+5. buka aplikasi dengan klik new tab pada browser: localhost/sipadapa.com

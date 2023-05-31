@@ -1,0 +1,41 @@
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^logout$ logout.php [L]
+RewriteRule ^tambahdiagnosa$ data_diagnosa_tambah.php [L]
+RewriteRule ^diagnosapenyakit$ data_diagnosa_penyakit.php [L]
+RewriteRule ^cetakhasildiagnosa$ data_diagnosa_cetak.php [L]
+RewriteRule ^prosesdiagnosapenyakit$ data_diagnosa_penyakit_proses.php [L]
+RewriteRule ^hasildiagnosapenyakit$ data_diagnosa_hasil.php [L]
+RewriteRule ^statistik$ statistik.php [L]
+
+RewriteRule ^ubahdiagnosa$ data_diagnosa_ubah.php [L]
+RewriteRule ^datadiagnosa$ data_diagnosa.php [L]
+RewriteRule ^identitas$ identitas_ubah.php [L]
+RewriteRule ^background$ background_ubah.php [L]
+
+RewriteRule ^tambahuser$ data_user_tambah.php [L]
+RewriteRule ^ubahuser$ data_user_ubah.php [L]
+RewriteRule ^datauser$ data_user.php [L]
+
+RewriteRule ^datapenyakit$ data_penyakit.php [L]
+RewriteRule ^tambahpenyakit$ data_penyakit_tambah.php [L]
+RewriteRule ^ubahpenyakit$ data_penyakit_ubah.php [L]
+
+RewriteRule ^datagejala$ data_gejala.php [L]
+RewriteRule ^tambahgejala$ data_gejala_tambah.php [L]
+RewriteRule ^ubahgejala$ data_gejala_ubah.php [L]
+
+RewriteRule ^datapengetahuan$ data_pengetahuan.php [L]
+RewriteRule ^tambahpengetahuan$ data_pengetahuan_tambah.php [L]
+RewriteRule ^ubahpengetahuan$ data_pengetahuan_ubah.php [L]
+
+RewriteRule ^user$ user.php [L]
+RewriteRule ^ubahprofil$ user_profil_ubah.php [L]
+RewriteRule ^diagnosa$ user_diagnosa.php [L]
+RewriteRule ^prosesdiagnosa$ user_proses_diagnosa.php [L]
+RewriteRule ^hasildiagnosa$ user_hasil_diagnosa.php [L]
+RewriteRule ^usercetakhasildiagnosa$ user_hasil_diagnosa_cetak.php [L]
+
+Options All -Indexes

@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^ceklogin$ cek_login.php [L]
+RewriteRule ^daftar$ daftar.php [L]
+RewriteRule ^detailpenyakit$ detail_penyakit.php [L]
+RewriteRule ^detaildbd$ detail_dbd.php [L]
+RewriteRule ^statistik$ statistik.php [L]
+
+Options All -Indexes
